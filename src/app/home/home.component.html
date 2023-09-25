@@ -1,0 +1,40 @@
+<app-header></app-header>
+<div class="contenedor">
+    <app-card class="parte1"></app-card>
+    <div class="parte2">
+        <div class="container">
+            <h3>Cambiar portada</h3>
+            <p>Puede subir una imagen nueva de portada</p>
+            <button class="boton">
+                <i class="fa fa-upload"></i>
+                <span class="texto">Subir portada</span>
+            </button>
+        </div>
+
+        <div class="container-search">
+            <p>{{textImages}}</p>
+            <input type="text" [(ngModel)]="searchTerm">
+            <button class="botonSearch" (click)="search()">{{textButtonSearch}}</button>
+        </div>
+
+        <div>
+            <p>{{textSearch}}</p>
+            <div class="image-list">
+                <div class="image-list" *ngIf="showSearch && images.length === 0">
+                    <p>{{noResults}}</p>
+                </div>        
+                <div class="image-list" *ngIf="showNoSearchText">
+                    <p>{{noTextSearch}}</p>
+                </div>
+                <div class="image-row" *ngFor="let image of images.slice(0, 12)">
+                    <img [src]="image.webformatURL" alt="{{ image.tags }}">           
+                </div>
+            </div>
+            <div class="textApi" *ngIf="images.length > 0">
+                <p>{{textApi}}</p>
+            </div>  
+        </div>
+    </div>
+</div>
+
+

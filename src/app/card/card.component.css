@@ -1,0 +1,35 @@
+.portada {
+    background-color: #f0ecec;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  p {
+    color: black;
+    text-align: start;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .imagen {
+    border: 2px solid #6c6a6a;
+    width: 100%;
+  }
+  
+  .texto-imagen {
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .button-saveChanges{
+    color: whitesmoke;
+    background-color: #c0ac74;
+    height: auto;
+    width: 200px;
+    padding: 20px;
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    border-radius: 5%;
+    border: none;
+    margin-top: 40px;
+  }

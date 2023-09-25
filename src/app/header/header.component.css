@@ -1,0 +1,20 @@
+.encabezado-container {
+  background-color: #c0ac74;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.icono-izquierdo,
+.texto {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px; /* Añade margen a la derecha para separar los elementos */
+}
+
+.icono-derecho {
+  font-size: 24px;
+  margin-left: auto; /* Mueve el icono a la derecha */
+}

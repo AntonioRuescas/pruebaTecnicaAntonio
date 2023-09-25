@@ -1,0 +1,73 @@
+.image-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* Tres columnas de 300px cada una */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra las columnas horizontalmente */
+}
+  
+.image-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img {
+    width: 100%; /* El ancho de la imagen se ajusta al contenedor */
+    height: 300px; /* Tamaño fijo de 300x300 píxeles */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la ajusta al tamaño del contenedor */
+}
+.textApi{
+    text-align: right;
+}
+.container-search{
+
+    border-top: 1px solid #000; /* Borde superior de 1px */
+    border-bottom: 1px solid #000; /* Borde inferior de 1px */
+    padding: 5px 0 20px 0; /* Espacio entre el contenido y los bordes superior e inferior */
+}
+.container{
+    padding-bottom: 20px;
+}
+.boton {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno interno del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    display: flex; /* Mostrar elementos en línea (horizontalmente) */
+    justify-content: space-between; /* Espacio entre elementos dentro del botón */
+    align-items: center; /* Centrar verticalmente los elementos dentro del botón */
+    background-color: #c0ac74;
+    border-radius: 5%;
+}
+.fa-upload {
+    display: flex;
+    align-items: center;
+}
+.texto {
+    margin-left: 20px; /* Espacio entre el icono y el texto */
+    margin-right: 40px;
+}
+.contenedor{
+    display: flex;
+}
+.parte1{
+    flex: 1;
+    padding-top: 30px
+}
+.parte2{
+    flex: 2;
+    padding: 30px;
+}
+.botonSearch{
+    margin-left: 5px;
+    background-color: #c0ac74;
+    padding: 20px;
+    border: none;
+    color: whitesmoke;
+    border-radius: 5%;
+    cursor: pointer;
+}
+input{
+    padding: 20px;
+}
